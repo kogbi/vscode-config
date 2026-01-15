@@ -194,7 +194,7 @@ IndentWidth: 4
 IndentWrappedFunctionNames: false
 
 # 保留在块开始处的空行
-KeepEmptyLinesAtTheStartOfBlocks: true
+KeepEmptyLinesAtTheStartOfBlocks: false
 
 # 开始一个块的宏的正则表达式
 MacroBlockBegin: ''
@@ -202,8 +202,8 @@ MacroBlockBegin: ''
 # 结束一个块的宏的正则表达式
 MacroBlockEnd: ''
 
-# 连续空行的最大数量
-MaxEmptyLinesToKeep: 10
+# 连续空行的最大数量（设置为1，合并多余空行）
+MaxEmptyLinesToKeep: 1
 
 # 命名空间的缩进: None, Inner(缩进嵌套的命名空间中的内容), All
 # NamespaceIndentation: Inner
