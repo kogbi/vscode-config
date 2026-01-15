@@ -121,7 +121,10 @@ BreakBeforeBinaryOperators: None
 #   注：这里认为语句块也属于函数
 
 # 大括号的换行规则
-BreakBeforeBraces: Allman
+# 使用自定义，以便函数与控制语句采用不同的大括号风格：
+# - 函数定义左大括号换行
+# - if/for/while/switch 等控制语句左大括号与语句在同一行
+BreakBeforeBraces: Custom
 
 # 三元运算操作符换行位置（?和: 在新行还是尾部）
 BreakBeforeTernaryOperators: true
